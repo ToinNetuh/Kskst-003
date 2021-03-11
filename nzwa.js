@@ -381,10 +381,10 @@ async function starts() {
 			const from = mek.key.remoteJid
 			const type = Object.keys(mek.message)[0]
 			const { text, extendedText, contact, location, liveLocation, image, video, sticker, document, audio, product } = MessageType
-			const time = moment.tz('Brazil/Brasília').format('DD/MM HH:mm:ss')
-                        const timi = moment.tz('Brazil/Brasília').add(30, 'days').calendar();
-                        const timu = moment.tz('Brazil/Brasília').add(20, 'days').calendar();
-			const date = moment.tz('Brazil/Brasília').format('DD,MM,YY')
+			const time = moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')
+                        const timi = moment.tz('Asia/Jakarta').add(30, 'days').calendar();
+                        const timu = moment.tz('America/Sao_Paulo').add(20, 'days').calendar();
+			const date = moment.tz('America/Sao_Paulo').format('DD,MM,YY')
 			body = (type === 'conversation' && mek.message.conversation.startsWith(prefix)) ? mek.message.conversation : (type == 'imageMessage') && mek.message.imageMessage.caption.startsWith(prefix) ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption.startsWith(prefix) ? mek.message.videoMessage.caption : (type == 'extendedTextMessage') && mek.message.extendedTextMessage.text.startsWith(prefix) ? mek.message.extendedTextMessage.text : ''
 			budy = (type === 'conversation') ? mek.message.conversation : (type === 'extendedTextMessage') ? mek.message.extendedTextMessage.text : ''
                         var pes = (type === 'conversation' && mek.message.conversation) ? mek.message.conversation : (type == 'imageMessage') && mek.message.imageMessage.caption ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption ? mek.message.videoMessage.caption : (type == 'extendedTextMessage') && mek.message.extendedTextMessage.text ? mek.message.extendedTextMessage.text : ''
@@ -410,7 +410,7 @@ async function starts() {
                                         ownerG: `[❗] Este comando só pode ser usado pelo grupo do proprietário! ❌`,
                         	        admin: `[❗] Este comando só pode ser usado pelo grupo de administrador! ❌`,
                                         Badmin: `[❗] Este comando só pode ser usado quando o bot se tornar um administrador! ❌`,
-                                        daftarB: `Calmaer ${pushname} antes si registre\nExemplo ${prefix}${pushname}`,
+                                        daftarB: `Calmaer vc naum si registrou\n ${prefix}daftar Hideri|18`,
                                 }
                         }
                 	const apakah = ['Ya','Tidak']
@@ -924,7 +924,7 @@ async function starts() {
 					var gh = body.slice(11)
 					var gbl7 = gh.split("|")[0];
 					var gbl8 = gh.split("|")[1];
-					if (args.length < 1) return reply(`Exemplo ${prefix}snowwrite ${pushname}|nomer`)
+					if (args.length < 1) return reply(`Exemplo ${prefix}snowwrite ${sender}|nomer`)
                                         if (!isRegister) return reply(mess.only.daftarB)
                                         if (isLimit(sender)) return reply(ind.limitend(pusname))
 					reply(mess.wait)
@@ -935,7 +935,7 @@ async function starts() {
 					break
 				case 'marvellogo':
 					var gh = body.slice(12)
-					if (args.length < 1) return reply(`Exemplo ${prefix}marvellogo ${pushname}`)
+					if (args.length < 1) return reply(`Exemplo ${prefix}marvellogo ${sender}`)
                                         if (!isRegister) return reply(mess.only.daftarB)
                                         if (isLimit(sender)) return reply(ind.limitend(pusname))
 					reply(mess.wait)
