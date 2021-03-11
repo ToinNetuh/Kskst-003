@@ -1,103 +1,103 @@
 exports.wait = () => {
-        return `⌛ Sedang di Prosess ⌛`
+        return `Calmaer opoha to fazeno`
 }
 
 exports.timeEnd = () => {
-        return `Waktu Habis`
+        return `O tempo acabou`
 }
 
 exports.succsess = () => {
-        return `✔️ Berhasil ✔️`
+        return `✔️ Sucesso ✔️`
 }
 
 exports.levelon = () => {
-        return `❬ ✔ ❭ *leveling telah aktif*`
+        return `❬ ✔ ❭ *Nivel foi ativo*`
 }
 
 exports.levelnoton = () => {
-        return `❬ X ❭  *disable leveling*`
+        return `❬ X ❭  *Nivel foi desativado*`
 }
 
 exports.levelnol = () => {
-        return `*LEVEL KAKAK MASIH* 0 °-°`
+        return `*Level 0 Kskst*`
 }
 
 exports.stick = () => {
-        return `[❗] Gagal, terjadi kesalahan saat mengkonversi gambar ke sticker ❌`
+        return `[❗] Falhar, ocorreu um erro ao converter a imagem para sticker ❌`
 }
 
 exports.Iv = () => {
-        return `❌ Link tidak valid ❌`
+        return `❌ Link inválido ❌`
 }
 
 exports.group = () => {
-        return `[❗] Perintah ini hanya bisa di gunakan dalam group! ❌`
+        return `[❗] Este comando só pode ser usado no grupo! ❌`
 }
 
 exports.ownerG = () => {
-        return `[❗] Perintah ini hanya bisa di gunakan oleh owner group! ❌`
+        return `[❗] Este comando só pode ser usado pelo proprietário do grupo! ❌`
 }
 
 exports.ownerB = () => {
-        return `[❗] Perintah ini hanya bisa di gunakan oleh owner bot! ❌`
+        return `[❗] Este comando só pode ser usado pelo proprietário do Bot! ❌`
 }
 
 exports.admin = () => {
-        return `[❗] Perintah ini hanya bisa di gunakan oleh admin group! ❌`
+        return `[❗] Este comando só pode ser usado pelos administradores do grupo! ❌`
 }
 
 exports.Badmin = () => {
-        return `[❗] Perintah ini hanya bisa di gunakan ketika bot menjadi admin! ❌`
+        return `[❗] Este comando só pode ser usado quando o bot se tornar um administrador! ❌`
 }
 
-exports.daftarB = (prefix) => {
-        return `──「 BELUM REGISTER 」──\nHalo kak !\nKamu belum Register nih, register dulu yuk... \n\nCommand : ${prefix}register nama|umur\nContoh : ${prefix}register Nazwa|16`
+exports.daftarB = (prefix, pushname) => {
+        return `Calmaer ${pushname}voce ainda naum si registrou\nDigite ${prefix}register ${pushname}|Idade\nLembrando que idade maxima e de 40 e a Idade Minima 12\nQuando si registrar de ${prefix}help para ter acesso aos menus disponiveis\nDesde ja obrigado por usar Hideri Bot`
 }
 
 exports.daftarD = () => {
-        return `*「 SUDAH REGISTER 」*\n\n*kamu sudah register di database bot*`
+        return `*Voce ja esta registrado ${pushname}*`
 }
 
 exports.wrongf = () => {
-        return`*format salah/text kosong*`
+        return`*Formato/texto vazio*`
 }
 
 exports.clears = () => {
-        return`*clear all Success*`
+        return`*Chat limpado com sucesso Moh*`
 }
 
 exports.pc = () => {
-        return`*「 REGISTRASI 」*\n\nuntuk mengetahui apa kamu sudah terdaftar silahkah check message yang saya kirim \n\nNOTE:\n*jika kamu belum mendapatkan pesan. berarti kamu belum menyimpan nomer bot*`
+        return`*CADASTRO*\n\nPara descobrir se você registrou a mensagem de verificação que enviei \n\nNOTA:\n*Se você não tem uma mensagem. significa que você não salvou o número do bot*`
 }
 
 exports.registered = (namaUser, umurUser, serialUser, time, sender) => {
-        return`*「 DATA REGISTER 」*\n\nkamu sudah terdaftar dengan data \n\n◪ *DATA* \n  │ \n  ├─ ❏ Name : ${namaUser} \n  ├─ ❏ Number : wa.me/${sender.split("@")[0]} \n  ├─ ❏ Age : ${umurUser} \n  ├─ ❏ Register Time : ${time} \n  │ \n └─ ❏ NS : ${serialUser} \n\n ❏ NOTE : \n JANGAN SAMPAI LUPA NOMOR INI KARENA INI PENTING:v`
+        return`*Data de Registro*\n\nVocê se registrou com dados \n\n◪ *DATA* \n  │ \n  ├─ ❏ Nome : ${namaUser} \n  ├─ ❏ Numero : wa.me/${sender.split("@")[0]} \n  ├─ ❏ Idade : ${umurUser} \n  ├─ ❏ Tempo de Registro : ${time} \n  │ \n └─ ❏ NS : ${serialUser} \n\n ❏ NOTA : \n Não esqueça esse número porque isso é importante\nObrigado po si registrar em Hideri Bot`
 }
 
 exports.cmdnf = (prefix, command) => {
-        return`command *${prefix}${command}* tidak di temukan\coba tulis *${prefix}menu*`
+        return`comando *${prefix}${command}* Ainda naum foi registrado\cPara ter acesso a lista de comandos digite *${prefix}menu*`
 }
 
 exports.owneresce = (pushname) => {
-        return`*maaf tapi ${pushname} bukan owner script*`
+        return`*Desculpe, mas ${pushname} Script do proprietário.*`
 }
 
 exports.limitend = (pushname) => {
-        return`*maaf ${pushname} limit hari ini habis*\n*limit di reset setiap jam 24:00*`
+        return`*Desculpe ${pushname} Limite hoje está esgotado*\n*Limite de redefinição por hora 24:00*`
 }
 
 exports.limitcount = (limitCounts) => {
         return`
-*「 LIMIT COUNT 」*
-sisa limit anda : ${limitCounts}
+*Limite de contagem*
+o resto do seu limite : ${limitCounts}
 
-NOTE : untuk mendapatkan limit. bisa lewat naik level atau buylimit`
+NOTA : para obter um limite\npode passar por nível ou comprando limite com dinhero que voce pode ganhar subindo nivel ou com eventos`
 }
 
 exports.satukos = () => {
-        return`*Tambah parameter 1/enable atau 0/disable`
+        return`*Adicionar parâmetros 1/Ativar ou 0/desativar`
 }
 
 exports.uangkau = (pushname, sender, uangkau) => {
-        return`◪ *ATM*\n  ❏ *Nama* : ${pushname}\n  ❏ *Nomer* : ${sender.split("@")[0]}\n  ❏ *Uang* : ${uangkau}`
+        return`◪ *ATM*\n  ❏ *Nome* : ${pushname}\n  ❏ *quarto* : ${sender.split("@")[0]}\n  ❏ *Dinheiro* : ${uangkau}`
 }
